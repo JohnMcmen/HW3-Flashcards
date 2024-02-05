@@ -30,7 +30,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://i.imgur.com/VOgW5yF.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![HW2COP4808-1](https://github.com/JohnMcmen/Hw2/assets/98662843/5641b35a-2a4e-422f-8078-b9261df19d6a)
+
 
 Gif was made with Screen to GIf
 
