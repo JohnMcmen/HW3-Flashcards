@@ -30,14 +30,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![HW2COP4808-1](https://github.com/JohnMcmen/Hw2/assets/98662843/5641b35a-2a4e-422f-8078-b9261df19d6a)
-
+![302165343-5641b35a-2a4e-422f-8078-b9261df19d6a](https://github.com/JohnMcmen/Hw2/assets/98662843/335f6a66-e929-468e-8d76-fa5051ea1143)
 
 Gif was made with Screen to GIf
 
 ## Notes
 
-The hardest part was mantaing order in my jsx file combining all the elements of html and implementing it harmoniusly with react. 
+The hardest part was maintaining order in my JSX file combining all the elements of HTML and implementing it harmoniously with react. 
 
 ## License
 
