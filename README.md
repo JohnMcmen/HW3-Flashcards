@@ -1,10 +1,10 @@
-# Web Development Project 2 - *Trivia Flashcards*
+# Web Development Project 3 - *Trivia Flashcards Part Two*
 
 Submitted by: **Johnathan McMenamin**
 
 This web app: **A fun implementation of html,css, and jsx to make a 10 card Trivia Flashcard webpage.**
 
-Time spent: **4** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
@@ -15,6 +15,8 @@ The following **required** functionality is completed:
 - [x] **A list of card pairs is created**
 - [x] **Clicking on the card shows the corresponding component of the information pair**
 - [x] **Clicking the next button displays a random new card**
+- [x] The user can enter their guess in a box before seeing the flipside of the card**
+- [x] Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
 
 The following **optional** features are implemented:
 
