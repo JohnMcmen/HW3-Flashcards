@@ -30,7 +30,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![302165343-5641b35a-2a4e-422f-8078-b9261df19d6a](https://github.com/JohnMcmen/Hw2/assets/98662843/335f6a66-e929-468e-8d76-fa5051ea1143)
+![3JCm0Ss](https://github.com/JohnMcmen/Hw2/assets/98662843/cafad259-8b2a-4e7f-9e4c-cb71356d6f25)
+
 
 Gif was made with Screen to GIf
 
