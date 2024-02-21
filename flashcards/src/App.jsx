@@ -55,6 +55,20 @@ const App = () => {
 
   const handleSubmit = () => {
     flipCard(); // Flip the card when the user submits the guess
+    setIsFlipped(!isFlipped); // Toggle the flip state
+  };
+
+  const handleChange = (event) => {
+    setGuess(event.target.value);
+  };
+
+  const checkAnswer = () => {
+    return guess.toLowerCase() === answers[cardIndex].toLowerCase();
+  };
+
+  const handleSubmit = () => {
+    flipCard();
+    setShowResult(true);
   };
 
   return (
@@ -72,6 +86,9 @@ const App = () => {
           <div className="flip-card-back">
             {showResult ? (
               <h1>{checkAnswer() ? "Correct!" : `Incorrect. The correct answer is: ${answers[cardIndex]}`}</h1>
+            ) : null}
+            {showResult ? (
+              <h1>{checkAnswer() ? "Correct!" : "Incorrect"}</h1>
             ) : null}
           </div>
         </div>
