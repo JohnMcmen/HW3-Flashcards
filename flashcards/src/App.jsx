@@ -3,6 +3,9 @@ import './App.css';
 
 const App = () => {
   const [cardIndex, setCardIndex] = useState(0);
+  const [guess, setGuess] = useState('');
+  const [showResult, setShowResult] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   const questions = [
     "What is the capital of China?",
@@ -31,29 +34,51 @@ const App = () => {
   ];
 
   const nextCard = () => {
+    setGuess('');
+    setShowResult(false);
+    setIsFlipped(false);
     setCardIndex((prevIndex) => (prevIndex + 1) % questions.length);
   };
 
   const flipCard = () => {
-    nextCard(); // Automatically go to the next card on click
+    setIsFlipped(!isFlipped); // Toggle the flip state
+  };
+
+  const handleChange = (event) => {
+    setGuess(event.target.value);
+  };
+
+  const checkAnswer = () => {
+    return guess.toLowerCase() === answers[cardIndex].toLowerCase();
+  };
+
+  const handleSubmit = () => {
+    flipCard();
+    setShowResult(true);
   };
 
   return (
     <div className="App">
       <div className="content-header">
         <h1>Trivia Website</h1>
-        <p>Click the arrow button to see the next card</p>
+        <p>Enter your guess below and click the card to see the answer</p>
         <p>There is a total of {questions.length} cards</p>
       </div>
-      <div className="flip-card" onClick={flipCard}>
+      <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={flipCard}>
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <h1>{questions[cardIndex]}</h1>
           </div>
           <div className="flip-card-back">
-            <h1>{answers[cardIndex]}</h1>
+            {showResult ? (
+              <h1>{checkAnswer() ? "Correct!" : "Incorrect"}</h1>
+            ) : null}
           </div>
         </div>
+      </div>
+      <div className="guess-box">
+        <input type="text" value={guess} onChange={handleChange} />
+        <button onClick={handleSubmit}>Submit</button>
       </div>
       <button onClick={nextCard}>Next Card</button>
     </div>
